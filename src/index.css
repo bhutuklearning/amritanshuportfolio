@@ -1,0 +1,1645 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@500&family=Major+Mono+Display&family=Zen+Dots&display=swap');
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background-color: #2C3E50;
+  color: #FFFFFF;
+  font-family: "Old Standard TT", serif;
+  /* font-family: 'Orbitron', sans-serif; */
+}
+
+/*About section icons*/
+#skillsCanvas img {
+  width: 22px !important;
+  height: 22px !important;
+  object-fit: contain;
+  max-width: 6vw;
+  max-height: 6vw;
+  min-width: 16px;
+  min-height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 6px;
+  box-shadow: 0 0 6px 1px #2228, 0 0 0px 0px #fff0;
+}
+
+/* Firefox-specific fixes for skill icons */
+@-moz-document url-prefix() {
+  #skillsCanvas img {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 30px !important;
+    min-height: 30px !important;
+    transform: scale(1.2);
+  }
+}
+
+.sphere-container, .about-sphere-container {
+  width: 100vw;
+  max-width: 400px;
+  height: 100vw;
+  max-height: 400px;
+  min-width: 220px;
+  min-height: 220px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas#skillsCanvas {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100%;
+  max-height: 100%;
+  aspect-ratio: 1/1;
+  display: block;
+}
+  /* max-width: 100%;
+  height: auto; */
+
+
+
+/* Preloader background animation */
+@keyframes gradientBg {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.preloader {
+  background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e);
+  background-size: 400% 400%;
+  animation: gradientBg 8s ease infinite;
+}
+
+/* Glowing text effect */
+.text-glow {
+  text-shadow: 0 0 8px #38bdf8, 0 0 16px #60a5fa, 0 0 24px #3b82f6;
+}
+
+/* Orbitron font */
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.preloader {
+  background-color: #2C3E50;
+  /* exact match with main portfolio background */
+}
+
+/* Neon glow text effect matching blue/yellow accents */
+.glowing-text {
+  text-shadow:
+    0 0 4px #ffffff,
+    0 0 8px #60A5FA,
+    0 0 12px #38BDF8,
+    0 0 16px #FFD700;
+}
+
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+.preloader {
+  background-color: #2C3E50;
+}
+
+.glowing-text {
+  text-shadow:
+    0 0 4px #ffffff,
+    0 0 8px #60A5FA,
+    0 0 12px #38BDF8,
+    0 0 16px #FFD700;
+}
+
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 1ch;
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.terminal-text {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.neon-title {
+  text-shadow: 0 0 5px #ffffff, 0 0 12px #00f7ff, 0 0 24px #f7e600;
+}
+
+
+.glow-on-hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.glow-on-hover:hover {
+  color: #3b82f6;
+  /* Tailwind blue-500 */
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.7);
+  /* bluish glow */
+}
+
+
+/* About Section */
+.text-gradient {
+  background: linear-gradient(90deg, #FFC107, #00F6FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sphere-container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+
+@keyframes rotateSphere {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.sphere-container:hover {
+  box-shadow: 0px 0px 30px 8px #00f6ff88;
+  transition: all 0.5s ease;
+  transform: rotateY(360deg) rotateX(20deg);
+}
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+/* Text Gradient */
+.text-gradient {
+  background: linear-gradient(90deg, #00f6ff, #ff00ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Fade In Animations */
+@keyframes aboutFadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes aboutFadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.about-animate-fadeInLeft {
+  animation: aboutFadeInLeft 1s ease forwards;
+}
+
+.about-animate-fadeInRight {
+  animation: aboutFadeInRight 1s ease forwards;
+}
+
+/* Typing Animation */
+@keyframes aboutTyping {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+.about-typing-text {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #00f6ff;
+  animation: aboutTyping 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: #00f6ff
+  }
+}
+
+/* Sphere Container */
+/* .about-sphere-container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+} */
+
+/* Glow on Hover */
+/* .about-skill-glow {
+  color: #facc15;
+  Tailwind yellow-500
+  text-shadow: 0 0 10px #facc15, 0 0 20px #facc15;
+  transition: transform 0.2s ease-in-out;
+}  */
+/* .about-skill-glow:hover {
+  transform: scale(1.2);
+  text-shadow: 0 0 20px #facc15, 0 0 40px #facc15;
+} */
+
+.about-skill-glow {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #facc15;
+  /* Yellow glow */
+  text-shadow: 0 0 6px #facc15, 0 0 12px #facc15, 0 0 24px #facc15;
+  position: relative;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+.about-skill-glow::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255, 255, 0, 0.15) 0%, rgba(255, 255, 0, 0.05) 70%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: -1;
+}
+
+.about-skill-glow:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 12px #facc15, 0 0 24px #facc15, 0 0 40px #facc15;
+}
+
+.about-skill-glow:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.about-skill-glow {
+  color: #facc15;
+  /* yellow-400 */
+  text-shadow: 0 0 8px #facc15, 0 0 14px rgba(255, 255, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.about-skill-glow:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 20px #facc15, 0 0 30px #facc15;
+  transform: scale(1.1);
+  border-radius: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+
+
+/* Sphere Container */
+/* .about-sphere-container {
+  width: 450px;
+  height: 400px;
+  position: relative;
+} */
+
+.about-sphere-container {
+  position: relative;
+  width: 430px;
+  height: 430px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 246, 255, 0.2), transparent 70%);
+  box-shadow: 0 0 30px rgba(0, 246, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+/*Project-Section*/
+@keyframes glowFadeInProjectTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glowFadeInProjectHeading {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.glow-animate-heading {
+  animation: glowFadeInProjectHeading 2s ease-in-out forwards;
+}
+
+.glow-animate-card-title {
+  animation: glowFadeInProjectTitle 0.8s ease-in-out forwards;
+}
+
+
+@keyframes typing-project-heading {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret-project-heading {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typing-heading {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #00f6ff;
+  width: 0;
+  animation:
+    typing-project-heading 2.5s steps(22, end) forwards,
+    blink-caret-project-heading 0.8s step-end infinite;
+}
+
+
+@keyframes bounce-vertical-project {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.glass-heading-project {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow:
+    0 0 20px rgba(241, 196, 15, 0.3),
+    0 0 30px rgba(52, 152, 219, 0.3);
+  border-radius: 16px;
+  padding: 0.75rem 2rem;
+  display: inline-block;
+  animation: bounce-vertical-project 2.5s infinite ease-in-out;
+}
+
+@keyframes bounceAnimation {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce-element {
+  animation: bounceAnimation 3s infinite ease-in-out;
+}
+
+.glass-heading-project {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(241, 196, 15, 0.4), 0 0 35px rgba(52, 152, 219, 0.5);
+}
+
+/* Project Card Glass + Glow */
+.project-card {
+  background: rgba(31, 41, 55, 0.5);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 25px rgba(52, 152, 219, 0.3), 0 0 30px rgba(241, 196, 15, 0.2);
+  transition: all 0.5s ease;
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+.sphere-container img, .sphere-container svg, #skillsCanvas img, #skillsCanvas svg {
+  max-width: 24px !important;
+  max-height: 24px !important;
+  width: 24px !important;
+  height: 24px !important;
+  object-fit: contain !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+/* Project Card Glass + Glow */
+.project-card {
+  background: rgba(31, 41, 55, 0.5);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 25px rgba(52, 152, 219, 0.3), 0 0 30px rgba(241, 196, 15, 0.2);
+  transition: all 0.5s ease;
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}
+
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(241, 196, 15, 0.4),
+    /* soft golden glow */
+    0 0 40px rgba(0, 246, 255, 0.3),
+    /* subtle cyan accent */
+    inset 0 0 10px rgba(241, 196, 15, 0.3);
+  /* inner golden glow */
+  border-color: rgba(241, 196, 15, 0.6);
+  /* border matches yellow */
+  transform: translateY(-5px) scale(1.02);
+  /* elegant lift effect */
+}

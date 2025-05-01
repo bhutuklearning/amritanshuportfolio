@@ -1,0 +1,100 @@
+.contact-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.envelope-animation {
+    margin-bottom: 1rem;
+    transform: scale(0);
+    transition: transform 0.8s ease-out;
+    color: #0ea5e9;
+}
+
+.envelope-animation.open {
+    transform: scale(1);
+}
+
+.contact-form {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.input-icon {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: #0ea5e9;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+.submit-button {
+    padding: 0.75rem 2rem;
+    background-color: #0ea5e9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0284c7;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.modal {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal h2 {
+    margin-bottom: 0.5rem;
+}
+
+.modal button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #0ea5e9;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
