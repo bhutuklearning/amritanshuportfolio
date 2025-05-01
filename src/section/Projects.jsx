@@ -6,7 +6,6 @@ import portfolioImage from "../assets/The_Portfolio.png";
 import proxyImage from "../assets/The_Proxy.png";
 import fileManagerImage from "../assets/FMS_Portfolio.png";
 
-
 const projects = [
     {
         name: "My Portfolio",
@@ -27,7 +26,7 @@ const projects = [
     {
         name: "File Management System",
         image: fileManagerImage,
-        description: " Built a terminal-based file manager with a color-coded interface to navigate, search, and manage files and directories. Included features like file operations (copy, move, delete), system information display, and search functionality, optimized for performance on both Windows and Linux environments.",
+        description: "Built a terminal-based file manager with a color-coded interface to navigate, search, and manage files and directories. Included features like file operations (copy, move, delete), system information display, and search functionality, optimized for performance on both Windows and Linux environments.",
         tech: ["C", "Standard C libraries", "Terminal UI"],
         github: "https://github.com/yourname/chat-app",
         demo: "https://chatapp-demo.vercel.app",
@@ -76,11 +75,30 @@ const Projects = () => {
                         </p>
 
                         <div className="flex gap-3 flex-wrap mt-auto">
-                            {/* GitHub and Demo buttons... */}
+                            {project.github && (
+                                <a
+                                    href={project.github}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-2 border border-white rounded-md px-3 py-1 text-sm hover:bg-white hover:text-black transition"
+                                >
+                                    <FaGithub />
+                                    GitHub
+                                </a>
+                            )}
+                            {project.demo && (
+                                <a
+                                    href={project.demo}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-1 border border-white rounded-md px-3 py-1 text-sm hover:bg-white hover:text-black transition"
+                                >
+                                    Demo <FiArrowRight />
+                                </a>
+                            )}
                         </div>
                     </div>
                 ))}
-
             </div>
         </section>
     );
