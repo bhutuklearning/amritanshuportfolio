@@ -9,14 +9,14 @@ const Footer = () => {
 
                 {/* Left: Name & Tagline */}
                 <div className="text-center md:text-left">
-                    <h2 className="text-xl font-bold italic underline decoration-[#3498DB]">Amritanshu</h2>
-                    <p className="text-sm mt-1 text-[#F1C40F]">Crafting code with passion & precision.</p>
+                    <h2 className="text-xl font-bold italic underline decoration-[#3498DB]">Amritanshu.</h2>
+                    <p className="text-sm mt-1 text-[#F1C40F]">Made with 💖 and in hurry.</p>
                 </div>
 
                 {/* Center: Social Icons */}
                 <div className="flex gap-6 text-2xl">
                     <a
-                        href="#"
+                        href="https://github.com/bhutuklearning"
                         target="_blank"
                         className="hover:text-[#F1C40F] transition-all duration-300"
                         aria-label="GitHub"
@@ -24,7 +24,7 @@ const Footer = () => {
                         <FaGithub />
                     </a>
                     <a
-                        href="#"
+                        href="https://www.linkedin.com/in/amritanshu-goutam-015bab248/"
                         target="_blank"
                         className="hover:text-[#3498DB] transition-all duration-300"
                         aria-label="LinkedIn"
@@ -32,7 +32,7 @@ const Footer = () => {
                         <FaLinkedin />
                     </a>
                     <a
-                        href="#"
+                        href="https://x.com/Amritanshutwt?t=mXlNuC9nA-6zRjiinRzY7g&s=09"
                         target="_blank"
                         className="hover:text-[#F1C40F] transition-all duration-300"
                         aria-label="Twitter"

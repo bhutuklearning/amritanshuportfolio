@@ -28,19 +28,19 @@ const SocialLinks = () => {
       "
         >
             <SocialIcon
-                href="#"
+                href="https://github.com/bhutuklearning"
                 icon={<FaGithub className="text-lg md:text-2xl text-white" />}
                 hoverColor="hover:text-[#F1C40F]"
                 label="GitHub"
             />
             <SocialIcon
-                href="#"
+                href="https://www.linkedin.com/in/amritanshu-goutam-015bab248/"
                 icon={<FaLinkedin className="text-lg md:text-2xl text-white" />}
                 hoverColor="hover:text-[#3498DB]"
                 label="LinkedIn"
             />
             <SocialIcon
-                href="#"
+                href="https://x.com/Amritanshutwt?t=mXlNuC9nA-6zRjiinRzY7g&s=09"
                 icon={<FaSquareXTwitter className="text-lg md:text-2xl text-white" />}
                 hoverColor="hover:text-[#1DA1F2]"
                 label="Twitter (X)"

@@ -4,7 +4,7 @@ import { FaArrowRight, FaGithub, FaLinkedin } from "react-icons/fa6";
 
 
 const Home = () => {
-    const messages = ["Frontend Architect", "UX Visionary", "Digital Craftsman"];
+    const messages = ["Fullstack Developer", "AI Explorer", "Curious Engineer"];
     const [displayText, setDisplayText] = useState("");
     const [msgIndex, setMsgIndex] = useState(0);
     const [charIndex, setCharIndex] = useState(0);

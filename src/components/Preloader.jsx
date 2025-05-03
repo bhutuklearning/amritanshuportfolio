@@ -3,8 +3,8 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 const greetings = [
     { text: "Welcome", color: "#FFD700" },
-    { text: "सुस्वागतम्", color: "#38BDF8" },
-    { text: "अभिनंदन", color: "#ffffff" }
+    { text: "सुस्वागतम्🙏", color: "#38BDF8" },
+    // { text: "अभिनंदन", color: "#ffffff" }
 ];
 
 const Preloader = ({ onComplete }) => {
@@ -25,7 +25,7 @@ const Preloader = ({ onComplete }) => {
                 setDisplayedText('');
                 setCharIndex(0);
                 setFullTextIndex((prev) => (prev + 1) % greetings.length);
-            }, 1500);
+            }, 1400);
             return () => clearTimeout(pauseTimer);
         }
     }, [charIndex, fullTextIndex]);
@@ -34,7 +34,7 @@ const Preloader = ({ onComplete }) => {
         const endTimer = setTimeout(() => {
             setShow(false);
             if (onComplete) onComplete();
-        }, 7800);
+        }, 5400);
         return () => clearTimeout(endTimer);
     }, []);
 
