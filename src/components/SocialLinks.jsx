@@ -40,7 +40,7 @@ const SocialLinks = () => {
                 label="LinkedIn"
             />
             <SocialIcon
-                href="https://x.com/Amritanshutwt?t=mXlNuC9nA-6zRjiinRzY7g&s=09"
+                href="https://x.com/Amritanshutwt"
                 icon={<FaSquareXTwitter className="text-lg md:text-2xl text-white" />}
                 hoverColor="hover:text-[#1DA1F2]"
                 label="Twitter (X)"
