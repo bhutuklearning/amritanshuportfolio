@@ -61,7 +61,7 @@ This is a personal portfolio website built with modern web technologies to showc
 
 ## 📬 Contact
 
-Amritanshu Goutam - [Contact through the website](https://amritanshu.online)
+Amritanshu Goutam - [Contact through the website](https://amritanshuportfolio.vercel.app/)
 
 ---
 
