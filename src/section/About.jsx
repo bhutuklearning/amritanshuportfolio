@@ -76,13 +76,10 @@ const About = () => {
                 <div className="bg-[#1F2937]/60 border border-cyan-300/30 shadow-lg shadow-cyan-400/20 rounded-xl backdrop-blur-md p-6 md:p-10 transition-all duration-300 hover:scale-[1.02] w-full max-w-xl text-white">
                     <h2 className="text-3xl font-bold mb-4 text-[#00f6ff]">&lt;About /&gt;</h2>
                     <p className="text-base md:text-lg mb-3 leading-relaxed animate-fadeIn">
-                        Hey there! 👋 I'm <span className="text-yellow-300 font-semibold">Amritanshu</span>, a tech enthusiast who thrives on transforming ideas into interactive, performant web applications.
+                        Hey there! 🌟 I'm <span className="text-yellow-300 font-semibold">Amritanshu</span>, an engineering student with a passion for AI/ML and full-stack development. I excel in transforming innovative ideas into interactive, high-performance web applications.
                     </p>
                     <p className="text-base md:text-lg mb-3 animate-fadeIn delay-100">
-                        With a strong grip on <span className="text-[#00f6ff] font-semibold">React</span> and <span className="text-[#00f6ff] font-semibold">Tailwind CSS</span>, I build visually appealing, responsive UIs with a clean codebase.
-                    </p>
-                    <p className="text-base md:text-lg mb-3 animate-fadeIn delay-200">
-                        I’m constantly exploring the evolving web ecosystem, currently diving deeper into <span className="text-yellow-300 font-semibold">Machine Learning</span> and <span className="text-yellow-300 font-semibold">Deep Learning</span>.
+                        With experience in <span className="text-[#00f6ff] font-semibold">Web</span> and <span className="text-[#00f6ff] font-semibold">Development</span>, I craft visually appealing and responsive UIs. My journey in technology spans from developing core computer science projects to diving deep into the realms of  <span className="text-yellow-300 font-semibold">Machine Learning</span> and <span className="text-yellow-300 font-semibold">Deep Learning</span>.
                     </p>
                     <p className="text-base md:text-lg animate-fadeIn delay-300">
                         Let’s connect and create something amazing together! 🚀
