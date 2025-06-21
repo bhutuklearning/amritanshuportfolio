@@ -31,6 +31,14 @@ const projects = [
         github: "https://github.com/bhutuklearning/File-Management-System",
         //demo: "https://chatapp-demo.vercel.app",
     },
+    {
+        name: "Router Inspection and Packet Sniffing Tool",
+        image: fileManagerImage,
+        description: "Developed a comprehensive network security toolkit with advanced device fingerprinting (passive/active methods), real-time packet analysis, and Man-in-the-Middle capabilities using Python, Scapy, and Socket Programming. Engineered ARP spoofing mechanism with automatic table restoration, integrated multi-device monitoring system, and built rich terminal UI with color-coded information display for enhanced data visualization.",
+        tech: ["Python", "Scapy", "Nmap", "Socket Programming", "TCP/IP", "ARP", "HTTP", "API Integration"],
+        //github: "https://github.com/bhutuklearning/File-Management-System",
+        github: "https://drive.google.com/drive/folders/10NV4F6-INP_jaHA_JgjrBHVVMmlTIjng?usp=drive_link",
+    },
 ];
 
 const Projects = () => {
