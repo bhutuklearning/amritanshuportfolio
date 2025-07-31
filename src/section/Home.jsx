@@ -160,7 +160,7 @@ const Home = () => {
                     transition={{ duration: 0.8, delay: 2 }}
                 >
                     <motion.a
-                        href="#projects"
+                        href="https://drive.google.com/file/d/1pwN20mA0yV-CBEBcNT1YjM9DqMHFyCXN/view?usp=sharing"
                         className="px-6 py-3 bg-yellow-400 text-gray-900 font-bold rounded-md border border-yellow-400 hover:bg-yellow-300 transition duration-300 font-['Press_Start_2P'] text-xs sm:text-sm flex items-center gap-2"
                         whileHover={{
                             scale: 1.05,
@@ -168,7 +168,7 @@ const Home = () => {
                         }}
                         whileTap={{ scale: 0.98 }}
                     >
-                        View Projects <FaArrowRight className="text-sm" />
+                        Resume <FaArrowRight className="text-sm" />
                     </motion.a>
 
                     <motion.a
