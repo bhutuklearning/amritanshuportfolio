@@ -167,6 +167,7 @@ const Home = () => {
                             boxShadow: "0px 0px 15px rgba(0, 0, 0, 0.2)",
                         }}
                         whileTap={{ scale: 0.98 }}
+                        target="_blank"
                     >
                         Resume <FaArrowRight className="text-sm" />
                     </motion.a>
