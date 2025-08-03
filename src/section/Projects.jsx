@@ -8,12 +8,12 @@ import fileManagerImage from "../assets/FMS_Portfolio.png";
 
 const projects = [
     {
-        name: "My Portfolio",
+        name: "Note App",
         image: portfolioImage,
-        description: "Designed and developed a responsive personal portfolio website showcasing projects, skills, and experience. Features smooth scroll-triggered animations, interactive UI, and a functional contact form for direct communication. Optimized for performance and accessibility across all devices.",
-        tech: ["React.js", "Tailwind CSS", "Framer-Motion", "JavaScript", "Node.js"],
-        github: "https://github.com/bhutuklearning/amritanshuportfolio",
-        demo: "https://amritanshuportfolio.vercel.app/",
+        description: "A simple note-making Application which supports CRUD operations. It allows users to create, read, update, and delete their notes. The frontend of the Project is built on React.js with Tailwind CSS and Daisy UI and the backend of the Project is built on Node.js, Express.js and MongoDB and the ORM used is Mongoose.",
+        tech: ["React.js", "Tailwind CSS", "Daisy UI", "Node.js", "Express.js", "MongoDB", "Mongoose"],
+        github: "https://github.com/bhutuklearning/Note-Making-App",
+        demo: "https://note-making-app-wgw3.onrender.com/",
     },
     {
         name: "The Proxy",
