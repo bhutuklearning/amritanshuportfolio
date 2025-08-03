@@ -4,7 +4,7 @@ import { FiArrowRight } from "react-icons/fi";
 
 import proxyImage from "../assets/The_Proxy.png";
 import fileManagerImage from "../assets/FMS_Portfolio.png";
-import NoteMakingApp from "../assets/Note_Making_App.png";
+import NoteMakingApp from "../assets/Note-Making.png";
 
 const projects = [
     {
