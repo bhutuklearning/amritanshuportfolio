@@ -2,14 +2,14 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FiArrowRight } from "react-icons/fi";
 
-import portfolioImage from "../assets/The_Portfolio.png";
 import proxyImage from "../assets/The_Proxy.png";
 import fileManagerImage from "../assets/FMS_Portfolio.png";
+import NoteMakingApp from "../assets/Note_Making_App.png";
 
 const projects = [
     {
         name: "Note App",
-        image: portfolioImage,
+        image: NoteMakingApp,
         description: "A simple note-making Application which supports CRUD operations. It allows users to create, read, update, and delete their notes. The frontend of the Project is built on React.js with Tailwind CSS and Daisy UI and the backend of the Project is built on Node.js, Express.js and MongoDB and the ORM used is Mongoose.",
         tech: ["React.js", "Tailwind CSS", "Daisy UI", "Node.js", "Express.js", "MongoDB", "Mongoose"],
         github: "https://github.com/bhutuklearning/Note-Making-App",
