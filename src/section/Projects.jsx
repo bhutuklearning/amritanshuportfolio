@@ -5,6 +5,7 @@ import { FiArrowRight } from "react-icons/fi";
 import proxyImage from "../assets/The_Proxy.png";
 import fileManagerImage from "../assets/FMS_Portfolio.png";
 import NoteMakingApp from "../assets/Note-Making.png";
+import BasicTodoImage from "../assets/Basic-Todo.png";
 
 const projects = [
     {
@@ -41,7 +42,7 @@ const projects = [
     },
     {
         name: "Basic Todo",
-        image: fileManagerImage,
+        image: BasicTodoImage,
         description: "A Basic Todo Application which has authentication and authorization. It allows users to create, read, update, and delete their tasks. The frontend of the Project is built on HTML, CSS and Javascript with Tailwind CSS and the backend of the Project is built on Node.js, Express.js and MongoDB and the ORM used is Mongoose. The Authentication and Authorization is done using JWT.",
         tech: ["HTML", "CSS", "Js", "Tailwind Css", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "Render"],
         github: "https://github.com/bhutuklearning/Todo-App-Trial",
