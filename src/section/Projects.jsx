@@ -39,6 +39,14 @@ const projects = [
         //github: "https://github.com/bhutuklearning/File-Management-System",
         github: "https://drive.google.com/drive/folders/10NV4F6-INP_jaHA_JgjrBHVVMmlTIjng?usp=drive_link",
     },
+    {
+        name: "Basic Todo",
+        image: fileManagerImage,
+        description: "A Basic Todo Application which has authentication and authorization. It allows users to create, read, update, and delete their tasks. The frontend of the Project is built on HTML, CSS and Javascript with Tailwind CSS and the backend of the Project is built on Node.js, Express.js and MongoDB and the ORM used is Mongoose. The Authentication and Authorization is done using JWT.",
+        tech: ["HTML", "CSS", "Js", "Tailwind Css", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "Render"],
+        github: "https://github.com/bhutuklearning/Todo-App-Trial",
+        demo: "https://todo-frontend-rf06.onrender.com/",
+    },
 ];
 
 const Projects = () => {
