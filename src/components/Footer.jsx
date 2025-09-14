@@ -24,7 +24,7 @@ const Footer = () => {
                         <FaGithub />
                     </a>
                     <a
-                        href="https://www.linkedin.com/in/amritanshu-goutam-015bab248/"
+                        href="https://www.linkedin.com/in/amritanshu-goutam/"
                         target="_blank"
                         className="hover:text-[#3498DB] transition-all duration-300"
                         aria-label="LinkedIn"
@@ -32,7 +32,7 @@ const Footer = () => {
                         <FaLinkedin />
                     </a>
                     <a
-                        href="https://x.com/Amritanshutwt?t=mXlNuC9nA-6zRjiinRzY7g&s=09"
+                        href="https://x.com/Amritanshutwt"
                         target="_blank"
                         className="hover:text-[#F1C40F] transition-all duration-300"
                         aria-label="Twitter"
