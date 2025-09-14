@@ -34,7 +34,7 @@ const SocialLinks = () => {
                 label="GitHub"
             />
             <SocialIcon
-                href="https://www.linkedin.com/in/amritanshu-goutam-015bab248/"
+                href="https://www.linkedin.com/in/amritanshu-goutam/"
                 icon={<FaLinkedin className="text-lg md:text-2xl text-white" />}
                 hoverColor="hover:text-[#3498DB]"
                 label="LinkedIn"
