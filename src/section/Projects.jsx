@@ -8,14 +8,14 @@ import NoteMakingApp from "../assets/Note-Making.png";
 import BasicTodoImage from "../assets/Basic-Todo.png";
 
 const projects = [
-    {
-        name: "Note App",
-        image: NoteMakingApp,
-        description: "A simple note-making Application which supports CRUD operations. It allows users to create, read, update, and delete their notes. The frontend of the Project is built on React.js with Tailwind CSS and Daisy UI and the backend of the Project is built on Node.js, Express.js and MongoDB and the ORM used is Mongoose.",
-        tech: ["React.js", "Tailwind CSS", "Daisy UI", "Node.js", "Express.js", "MongoDB", "Mongoose"],
-        github: "https://github.com/bhutuklearning/Note-Making-App",
-        //demo: "https://note-making-app-wgw3.onrender.com/",
-    },
+    // {
+    //     name: "Note App",
+    //     image: NoteMakingApp,
+    //     description: "A simple note-making Application which supports CRUD operations. It allows users to create, read, update, and delete their notes. The frontend of the Project is built on React.js with Tailwind CSS and Daisy UI and the backend of the Project is built on Node.js, Express.js and MongoDB and the ORM used is Mongoose.",
+    //     tech: ["React.js", "Tailwind CSS", "Daisy UI", "Node.js", "Express.js", "MongoDB", "Mongoose"],
+    //     github: "https://github.com/bhutuklearning/Note-Making-App",
+    //     //demo: "https://note-making-app-wgw3.onrender.com/",
+    // },
     {
         name: "The Proxy",
         image: proxyImage,
@@ -41,12 +41,12 @@ const projects = [
         github: "https://drive.google.com/drive/folders/10NV4F6-INP_jaHA_JgjrBHVVMmlTIjng?usp=drive_link",
     },
     {
-        name: "Basic Todo",
+        name: "Task Manager App",
         image: BasicTodoImage,
-        description: "A Basic Todo Application which has authentication and authorization. It allows users to create, read, update, and delete their tasks. The frontend of the Project is built on HTML, CSS and Javascript with Tailwind CSS and the backend of the Project is built on Node.js, Express.js and MongoDB and the ORM used is Mongoose. The Authentication and Authorization is done using JWT.",
+        description: "A Task Manager Application which has authentication and authorization. It allows users to create, read, update, and delete their tasks. The frontend of the Project is built on HTML, CSS and Javascript with Tailwind CSS and the backend of the Project is built on Node.js, Express.js and MongoDB and the ORM used is Mongoose. The Authentication and Authorization is done using JWT.",
         tech: ["HTML", "CSS", "Js", "Tailwind Css", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "Render"],
         github: "https://github.com/bhutuklearning/Todo-App-Trial",
-        //demo: "https://todo-frontend-rf06.onrender.com/",
+        demo: "https://todo-frontend-rf06.onrender.com/",
     },
 ];
 
