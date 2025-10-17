@@ -160,7 +160,7 @@ const Home = () => {
                     transition={{ duration: 0.8, delay: 2 }}
                 >
                     <motion.a
-                        href="https://drive.google.com/file/d/1RClc1ZT4ivcT4n-OGXpYaCDG4X_HqXar/view?usp=drive_link"
+                        href="https://drive.google.com/file/d/1vw9a01RP04fRPX7KHMeSINwl1NQBP4xg/view?usp=sharing"
                         className="px-6 py-3 bg-yellow-400 text-gray-900 font-bold rounded-md border border-yellow-400 hover:bg-yellow-300 transition duration-300 font-['Press_Start_2P'] text-xs sm:text-sm flex items-center gap-2"
                         whileHover={{
                             scale: 1.05,
