@@ -4,8 +4,8 @@ import { FiArrowRight } from "react-icons/fi";
 
 import proxyImage from "../assets/The_Proxy.png";
 import fileManagerImage from "../assets/FMS_Portfolio.png";
-import NoteMakingApp from "../assets/Note-Making.png";
 import BasicTodoImage from "../assets/Basic-Todo.png";
+import URLShortener from "..//assets/Url-Shortener.png"
 
 const projects = [
     // {
@@ -47,6 +47,15 @@ const projects = [
         tech: ["HTML", "CSS", "Js", "Tailwind Css", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "Render"],
         github: "https://github.com/bhutuklearning/Todo-App-Trial",
         demo: "https://todo-frontend-rf06.onrender.com/",
+    },
+
+    {
+        name: "URL Shortener App",
+        image: URLShortener,
+        description: "A Full Stack URL Shortener project with comprehensive analytics and user management. The URL can be shortened with custom Id and all its analytics can be tracked and alongside it also supports authentication and autherization using JWT acess and refresh token. Its analytics and url shortening functionality makes it different from other Solutions present.",
+        tech: ["React Js", "Js", "Tailwind Css", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "Shot Id", "Logging", "Helmet", "Proper Error Management"],
+        github: "https://github.com/bhutuklearning/Basic-URL-Shortener",
+        demo: "https://url-shortener-basic.vercel.app/",
     },
 ];
 
